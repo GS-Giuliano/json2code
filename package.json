@@ -1,0 +1,26 @@
+{
+  "name": "json2code",
+  "version": "1.0.0",
+  "description": "Transform JSON to code (html, bootstrap, bruma, e.g.)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GS-Giuliano/json2code.git"
+  },
+  "keywords": [
+    "json",
+    "html",
+    "bootstrap",
+    "bruma",
+    "jquery"
+  ],
+  "author": "Giuliano Nascimento <giuliano.santana.nascimento@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GS-Giuliano/json2code/issues"
+  },
+  "homepage": "https://github.com/GS-Giuliano/json2code#readme"
+}

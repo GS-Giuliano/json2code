@@ -7,6 +7,18 @@ const RootParser = require("./_root.js");
 class HtmlParser extends RootParser {
   constructor(options) {
     super(options);
+
+    this.page = {
+      top: "<!DOCTYPE html>\n<html>\n",
+      titleBegin: "<title>",
+      titleEnd: "</title>\n",
+      headBegin: "<head>\n",
+      headEnd: "</head>\n<body>\n",
+      head: "<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n",
+      begin: "",
+      end: "",
+      bottom: "</body>\n</html>"
+    };
   }
 
   text(input) {

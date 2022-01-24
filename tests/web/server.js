@@ -5,11 +5,16 @@ const app = express()
 
 
 app.get('/', function (req, res) {
-    o = new Json2code({ useCDN: true, module: moduleName });
-    o.$.begin({title: Page title});
-    o.$.title("Page title");
-    o.$.subTitle("Page sub-title");
+    o = new Json2code({ useCDN: true, module: 'bulma' });
+    o.$.top({title: "Page title"});
+    
+    o.$.begin();
+    o.$.title({data: "Page title"});
+    o.$.subTitle({data: "Page sub-title"});
     o.$.end();
+    
+    o.$.bottom();
+
     res.send(o.$.output);
 })
 

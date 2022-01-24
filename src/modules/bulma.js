@@ -9,6 +9,21 @@ const HtmlParser = require("./html.js");
 class BulmaParser extends HtmlParser {
   constructor(options) {
     super(options);
+
+    this.page = {
+      top: "<!DOCTYPE html>\n<html>\n",
+      titleBegin: "<title>",
+      titleEnd: "</title>\n",
+      headBegin: "<head>\n",
+      headEnd: "</head>\n<body>\n\n",
+      head: "\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n",
+      begin: "<section class=\"section\">\n<div class=\"container\">\n\n",
+      end: "\n\n</div>\n</section>\n\n",
+      bottom: "</body>\n</html>"
+    };
+
+    this.cssCode = "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css\">\n";
+
     this.styles = {
       default: "is-black",
       dark: "is-dark",

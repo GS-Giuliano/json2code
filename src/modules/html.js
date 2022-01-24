@@ -10,92 +10,92 @@ class HtmlParser extends RootParser {
   }
 
   text(input) {
-    return (
+    return (this.toOutput(
       "<p" +
       this.toClass(this.classes.text) +
       ">" +
       this.toString(input.data) +
-      "</p>"
+      "</p>")
     );
   }
 
   title(input) {
-    return (
+    return (this.toOutput(
       "<h1" +
       this.toClass(this.classes.title) +
       ">" +
       this.toString(input.data) +
-      "</h1>"
+      "</h1>")
     );
   }
 
   subTitle(input) {
-    return (
+    return (this.toOutput(
       "<h2" +
       this.toClass(this.classes.subTitle) +
       ">" +
       this.toString(input.data) +
-      "</h2>"
+      "</h2>")
     );
   }
 
   subTitle2(input) {
-    return (
+    return (this.toOutput(
       "<h3" +
       this.toClass(this.classes.subTitle2) +
       ">" +
       this.toString(input.data) +
-      "</h3>"
+      "</h3>")
     );
   }
 
   subTitle3(input) {
-    return (
+    return (this.toOutput(
       "<h4" +
       this.toClass(this.classes.subTitle3) +
       ">" +
       this.toString(input.data) +
-      "</h4>"
+      "</h4>")
     );
   }
 
   code(input) {
-    return (
+    return (this.toOutput(
       "<pre" +
       this.toClass(this.classes.code) +
       ">" +
       this.toString(input.data) +
-      "</pre>"
+      "</pre>")
     );
   }
 
   bold(input) {
-    return (
+    return (this.toOutput(
       "<strong" +
       this.classes.code +
       ">" +
       this.toString(input.data) +
-      "</strong>"
+      "</strong>")
     );
   }
 
   italic(input) {
-    return (
+    return (this.toOutput(
       "<u" +
       this.toClass(this.classes.code) +
       ">" +
       this.toString(input.data) +
-      "</u>"
+      "</u>")
     );
   }
 
   underline(input) {
-    return (
+    return (this.toOutput(
       "<u" +
       this.toClass(this.classes.code) +
       ">" +
       this.toString(input.data) +
-      "</u>"
+      "</u>")
     );
   }
 
@@ -118,7 +118,7 @@ class HtmlParser extends RootParser {
       onChange = ' onChange="' + onChange + '"';
     }
 
-    return (
+    return (this.toOutput(
       "<a" +
       this.toClass(this.classes.code) +
       href +
@@ -127,17 +127,17 @@ class HtmlParser extends RootParser {
       onChange +
       ">" +
       this.toString(input.data) +
-      "</a>"
+      "</a>")
     );
   }
 
   tag(input) {
-    return (
+    return (this.toOutput(
       "<span" +
       this.toClass(this.classes.tag, input.style) +
       ">" +
       this.toString(input.data) +
-      "</span>"
+      "</span>")
     );
   }
 }

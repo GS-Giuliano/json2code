@@ -10,43 +10,43 @@ class TextParser extends RootParser {
   }
 
   title(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   subTitle(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   subTitle2(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   subTitle3(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   code(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   bold(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   italic(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   underline(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   url(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 
   tag(input) {
-    return input.data;
+    return this.toOutput(input.data);
   }
 }
 

@@ -4,6 +4,7 @@
 
 class RootParser {
   constructor(options) {
+    this.output = '';
     this.useCDN = false;
     this.useModule = "";
     this.CDNJs = "";
@@ -46,6 +47,18 @@ class RootParser {
     }
   }
 
+  begin(options) {
+    this.output = '';
+    if (typeof options === "object")
+    {
+
+    }
+  }
+
+  end() {
+    this.output 
+  }
+
   toClass() {
     let classString = "";
     if (arguments.length > 0) {
@@ -69,6 +82,13 @@ class RootParser {
       return input.toString();
     }
   }
+
+  toOutput(input)
+  {
+    this.output = this.output + input;
+    return(input);
+  }
+
 }
 
 module.exports = RootParser;

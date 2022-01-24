@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/GS-Giuliano/json2code/issues"
   },
-  "homepage": "https://github.com/GS-Giuliano/json2code#readme"
+  "homepage": "https://github.com/GS-Giuliano/json2code#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }

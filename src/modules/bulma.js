@@ -16,13 +16,14 @@ class BulmaParser extends HtmlParser {
       titleEnd: "</title>\n",
       headBegin: "<head>\n",
       headEnd: "</head>\n<body>\n\n",
-      head: "\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n",
-      begin: "<section class=\"section\">\n<div class=\"container\">\n\n",
-      end: "\n\n</div>\n</section>\n\n",
-      bottom: "</body>\n</html>"
+      head: '\t<meta charset="utf-8">\n\t<meta name="viewport" content="width=device-width, initial-scale=1">\n',
+      begin: '<section class="section">\n<div class="container">\n\n',
+      end: "\n</div>\n</section>\n\n",
+      bottom: "</body>\n</html>",
     };
 
-    this.cssCode = "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css\">\n";
+    this.linksCSS =
+      '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">';
 
     this.styles = {
       default: "is-black",
@@ -35,10 +36,11 @@ class BulmaParser extends HtmlParser {
       warning: "is-warning",
       danger: "is-danger",
     };
-    this.classes.title = "title";
-    this.classes.subTitle = "subtitle";
+    this.classes.title = "title is-2";
+    this.classes.subTitle = "subtitle is-3";
     this.classes.subTitle2 = "subtitle is-4";
     this.classes.subTitle3 = "subtitle is-5";
+    this.classes.filter = "subtitle is-6";
     this.classes.bold = "";
     this.classes.italic = "";
     this.classes.tag = "tag";

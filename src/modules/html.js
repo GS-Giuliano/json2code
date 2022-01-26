@@ -103,11 +103,11 @@ class HtmlParser extends RootParser {
 
   italic(input) {
     return this.toOutput(
-      "<u" +
+      "<i" +
         this.toClass(this.classes.code) +
         ">" +
         this.toString(input.data) +
-        "</u>"
+        "</i>"
     );
   }
 

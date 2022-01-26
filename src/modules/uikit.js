@@ -44,8 +44,8 @@ class BulmaParser extends HtmlParser {
     };
     this.classes.title = "uk-heading-small";
     this.classes.subTitle = "uk-text-lead";
-    this.classes.subTitle2 = "";
-    this.classes.subTitle3 = "";
+    this.classes.subTitle2 = "uk-text-large";
+    this.classes.subTitle3 = "uk-text-default";
     this.classes.filter = "uk-text-meta";
     this.classes.text = "uk-text-default";
     this.classes.bold = "";

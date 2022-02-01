@@ -1,28 +1,9 @@
-//import {json2code} from "src/json2code.js";
-const Json2code = require("./src/json2code.js");
+/*!
+ * json2code
+ * Copyright(c) 2022 Giuliano Santana Nascimento
+ * Apache-2.0 Licensed
+ */
 
-function test(moduleName) {
-  console.log("==> Testing module [" + moduleName + "]");
+"use strict";
 
-  j2c = new Json2code({ useCDN: true, module: moduleName });
-  console.log(j2c.$.title({ data: "Title!" }));
-
-  //console.log(j2c.$.text({ data: "Hello world!" }));
-  // console.log(j2c.$.subTitle({ data: "Sub-title!" }));
-  // console.log(j2c.$.code({ data: "Source code!" }));
-  // console.log(
-  //   j2c.$.url({
-  //     data: "Hello world!",
-  //     href: "https://google.com",
-  //     target: "_new",
-  //   })
-  // );
-  // console.log(j2c.$.tag({ data: "Tag 1" }));
-  // console.log(j2c.$.tag({ data: "Tag 1", style: j2c.$.styles.primary }));
-  console.log();
-}
-
-// test("text");
-// test("csv");
-// test("html");
-test("bulma");
+module.exports = require("./lib/json2code");

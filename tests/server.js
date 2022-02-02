@@ -1,11 +1,11 @@
 const express = require("express");
-const Json2code = require("./lib/json2code.js");
+const json2frontend = require("../lib/json2frontend.js");
 
 const app = express();
 
 app.get("/", function (req, res) {
 
-  const o = new Json2code({ useCDN: true, module: "bootstrap", version: "last" });
+  const o = new json2frontend({ useCDN: true, module: "skeleton", version: "last" });
   o.top({ title: "Page title" });
   //o.css();
   o.begin();

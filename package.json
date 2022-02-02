@@ -1,13 +1,13 @@
 {
-  "name": "json2code",
-  "version": "0.0.1",
+  "name": "json2frontend",
+  "version": "1.0.0",
   "description": "Transform JSON to code (html, bootstrap, bruma, e.g.)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GS-Giuliano/json2code.git"
+    "url": "git+https://github.com/GS-Giuliano/json2frontend.git"
   },
   "keywords": [
     "json",
@@ -19,9 +19,9 @@
   "author": "Giuliano Nascimento <giuliano.santana.nascimento@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/GS-Giuliano/json2code/issues"
+    "url": "https://github.com/GS-Giuliano/json2frontend/issues"
   },
-  "homepage": "https://github.com/GS-Giuliano/json2code#readme",
+  "homepage": "https://github.com/GS-Giuliano/json2frontend#readme",
   "dependencies": {
     "express": "^4.17.2"
   }

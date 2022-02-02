@@ -1,6 +1,6 @@
-# json2code
+# json2frontend
 
-Transform JSON to code (html, bootstrap, bulma, uikit, skeleton, e.g.)
+Transform JSON to front-end code (html, bootstrap, bulma, uikit, skeleton, e.g.)
 
 ## Installation
 
@@ -15,7 +15,7 @@ Install my-project with npm
 ### Nodejs example
 
 ```javascript
-const Json2code = require("../lib/json2code.js");
+const Json2frontend = require("../lib/json2frontend.js");
 
 function test(moduleName) {
   console.log("==> Testing module [" + moduleName + "]");
@@ -38,9 +38,9 @@ test("uikit");
 
 ```javascript
 const express = require("express");
-const json2code = require("json2code");
+const json2frontend = require("json2frontend");
 const app = express();
-const page = new json2code({
+const page = new json2frontend({
   useCDN: true,
   module: "bootstrap",
   version: "last",

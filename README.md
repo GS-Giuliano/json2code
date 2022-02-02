@@ -1,6 +1,6 @@
 # json2code
 
-Transform JSON to code (html, bootstrap, bruma, e.g.)
+Transform JSON to code (html, bootstrap, bulma, uikit, skeleton, e.g.)
 
 ## Installation
 
@@ -13,6 +13,28 @@ Install my-project with npm
 ## Usage/Examples
 
 ### Nodejs example
+
+```javascript
+const Json2code = require("../lib/json2code.js");
+
+function test(moduleName) {
+  console.log("==> Testing module [" + moduleName + "]");
+
+  page = new Json2code({ useCDN: true, module: moduleName });
+  console.log(page.title({ data: "Title!" }));
+  console.log(page.subTitle({ data: "Sub-title!" }));
+  console.log(page.bold({ data: "Hello world!" }));
+  console.log();
+}
+
+test("html");
+test("bootstrap");
+test("bulma");
+test("uikit");
+
+```
+
+### Nodejs server example
 
 ```javascript
 const express = require("express");

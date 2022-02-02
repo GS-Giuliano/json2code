@@ -1,6 +1,6 @@
 # json2code
 
-Transform JSON to code (html, bootstrap, bruma, e.g.)
+Transform JSON to code (html, bootstrap, bulma, uikit, skeleton, e.g.)
 
 ## Installation
 

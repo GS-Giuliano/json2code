@@ -7,7 +7,7 @@ Transform JSON to front-end code (html, bootstrap, bulma, uikit, skeleton, e.g.)
 Install my-project with npm
 
 ```bash
-  npm install json2code
+  npm install json2frontend
 ```
 
 ## Usage/Examples

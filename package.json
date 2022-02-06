@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Transform JSON to code (html, bootstrap, bruma, e.g.)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify lib/index.js | uglifyjs --mangle --compress > lib/json2fronted-min.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,9 @@
   "homepage": "https://github.com/GS-Giuliano/json2frontend#readme",
   "dependencies": {
     "express": "^4.17.2"
-  }
+  },
+  "devDependencies": {
+    "browserify": "latest",
+    "uglify-js": "latest"
+  }  
 }

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Transform JSON to code (html, bootstrap, bruma, e.g.)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify lib/index.js | uglifyjs --mangle --compress > lib/json2fronted-min.js"
+    "test": "node tests/basic.js && exit 1",
+    "build": "npx browserify lib/json2frontend.js | npx uglifyjs --mangle --compress > lib/json2frontend.min.js"
   },
   "repository": {
     "type": "git",

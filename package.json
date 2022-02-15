@@ -23,11 +23,9 @@
     "url": "https://github.com/GS-Giuliano/json2frontend/issues"
   },
   "homepage": "https://github.com/GS-Giuliano/json2frontend#readme",
-  "dependencies": {
-    "express": "^4.17.2"
-  },
   "devDependencies": {
-    "browserify": "latest",
+    "browserify": "^17.0.0",
+    "express": "^4.17.2",
     "uglify-js": "latest"
-  }  
+  }
 }

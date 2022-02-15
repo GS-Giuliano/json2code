@@ -1,6 +1,6 @@
 {
   "name": "json2frontend",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Transform JSON to code (html, bootstrap, bruma, e.g.)",
   "scripts": {
     "test": "node tests/basic.js && exit 1",
